@@ -4,6 +4,8 @@
 
 Excelファイルをzipとして展開・分析し、各シートの内容を人間が見やすいMarkdown形式に変換する作業の詳細手順書
 
+**汎用性**: この手順書は様々なExcelファイル（経歴書、売上データ、在庫管理、プロジェクト管理表等）に対応可能な汎用的な設計となっています。
+
 ---
 
 ## 🎯 作業目標
@@ -22,6 +24,30 @@ Excelファイルをzipとして展開・分析し、各シートの内容を人
 - mermaid図の作成能力
 - 日本語での文書作成
 
+### 📁 出力ディレクトリ規則
+**重要**: AIが作成する全ての分析結果ファイルは `docs/result/` ディレクトリに保存すること
+
+```
+docs/
+├── result/                              # 👈 AI作成ファイルの保存先
+│   ├── excel_structure_analysis.md     # Excel構造分析
+│   ├── [シート名1]_sheet.md             # 第1シート基本分析
+│   ├── [シート名2]_sheet.md             # 第2シート基本分析
+│   ├── [シート名3]_sheet.md             # 第3シート基本分析（構成図等）
+│   ├── [シート名1]_詳細.md              # 第1シート詳細分析
+│   ├── [シート名2]_詳細.md              # 第2シート詳細分析
+│   ├── [シート名3]_詳細フローチャート.md # 構成図系シート詳細分析
+│   └── [Excelファイル名]_総合分析レポート.md # 総合分析レポート
+└── AI作業指示書_Excel分析からMarkdown変換.md  # 作業手順書（このファイル）
+```
+
+**ファイル命名規則**:
+- `[シート名]`: Excelのワークシート名をそのまま使用
+- `[Excelファイル名]`: 分析対象の.xlsxファイル名（拡張子なし）
+- 日本語シート名の場合はそのまま使用、英数字は適宜変換
+
+**ディレクトリ作成**: 作業開始前に `docs/result/` ディレクトリが存在しない場合は作成すること
+
 ---
 
 ## 🔄 作業フロー
@@ -31,12 +57,15 @@ Excelファイルをzipとして展開・分析し、各シートの内容を人
 #### Step 0-1: タスク管理の初期化（解析フェーズ）
 ```markdown
 TodoWriteツールを使用して以下のタスクを設定：
+0. docs/result/ディレクトリを作成（存在しない場合）
 1. Excelファイルの拡張子を.xlsxから.zipに変換
 2. zipファイルをunzipして展開
 3. 展開されたディレクトリ構造を分析
 4. excel_structure_analysis.mdを作成
 5. 各シートのXX_sheet.mdファイルを作成
 ```
+
+**重要**: 最初に `docs/result/` ディレクトリの存在確認と作成を必ず実行すること
 
 #### Step 0-2: Excelファイルの拡張子変換【1番目のタスクを in_progress に設定】
 
@@ -112,7 +141,7 @@ ls -la "展開用ディレクトリ/xl/worksheets/"
 
 #### Step 0-5: excel_structure_analysis.md作成【4番目のタスクを in_progress に設定】
 
-**出力ファイル**: `docs/excel_structure_analysis.md`
+**出力ファイル**: `docs/result/excel_structure_analysis.md`
 
 **必須含有要素**:
 ```markdown
@@ -146,9 +175,9 @@ ls -la "展開用ディレクトリ/xl/worksheets/"
 **作成対象**: 各worksheet XMLファイルに対応するMarkdownファイル
 
 **ファイル命名規則**:
-- `sheet1.xml` → `docs/シート名_sheet.md`
-- `sheet2.xml` → `docs/シート名_sheet.md`
-- `sheet3.xml` → `docs/シート名_sheet.md`
+- `sheet1.xml` → `docs/result/シート名_sheet.md`
+- `sheet2.xml` → `docs/result/シート名_sheet.md`
+- `sheet3.xml` → `docs/result/シート名_sheet.md`
 
 **必須含有要素（各シートファイル）**:
 ```markdown
@@ -184,12 +213,13 @@ ls -la "展開用ディレクトリ/xl/worksheets/"
 #### Step 1-1: タスク管理の初期化（変換フェーズ）
 ```markdown
 TodoWriteツールを使用して以下のタスクを設定：
-1. TGシートの経歴書データを見やすいMarkdown形式で整理
-2. GGシートの経歴書データを見やすいMarkdown形式で整理
-3. 構成図シートのフローチャートをmermaid形式で改善
+1. 第1シートのデータを見やすいMarkdown形式で詳細整理
+2. 第2シートのデータを見やすいMarkdown形式で詳細整理
+3. 第3シート（構成図・フローチャート系）をmermaid形式で改善
 4. 全体のサマリーとプロジェクト分析ドキュメントを作成
 
 ※ Phase 0で作成された基本ファイル（excel_structure_analysis.md, XX_sheet.md）が前提
+※ シート数が3つ以外の場合は、実際のシート数に応じてタスクを調整
 ```
 
 #### Step 1-2: 基準ファイルの確認
@@ -197,63 +227,67 @@ TodoWriteツールを使用して以下のタスクを設定：
 - 既存のmarkdownファイル一覧を確認（mcp__serena__list_dir使用）
 
 #### Step 1-3: 既存データの読み込み
-以下のファイルを並行して読み込み：
-- `docs/TG_sheet.md`
-- `docs/GG_sheet.md`
-- `docs/構成図_sheet.md`
-- `docs/excel_structure_analysis.md`
+Phase 0で作成された以下のファイルを並行して読み込み：
+- `docs/result/excel_structure_analysis.md`
+- `docs/result/[シート名1]_sheet.md`
+- `docs/result/[シート名2]_sheet.md`
+- `docs/result/[シート名3]_sheet.md`
+- その他のシートファイル（シート数に応じて）
+
+**重要**: 実際のシート名に置き換えて読み込むこと
 
 ---
 
 ### Phase 2: 個別シート変換フェーズ
 
-#### Step 2-1: TGシート変換【最初のタスクを in_progress に設定】
+#### Step 2-1: 第1シート詳細変換【最初のタスクを in_progress に設定】
 
-**出力ファイル**: `docs/TG_経歴書_詳細.md`
+**出力ファイル**: `docs/result/[シート名1]_詳細.md`
 
 **必須含有要素**:
 ```markdown
-# TG（銀河 太郎）- 経歴書詳細
+# [シート名1] - 詳細分析
 
 ## 📋 基本情報
 - 表形式での基本情報整理
+- データ概要・特徴
 
-## 💼 プロジェクト履歴
-- 各プロジェクトを時系列で詳細化
-- システム概要、作業内容、使用技術を構造化
+## 💼 データ構造・内容
+- 主要データを時系列または論理順序で詳細化
+- システム概要、作業内容、技術情報などを構造化
 
-## 📊 キャリア統計
-- 業界経験のpieチャート（mermaid）
-- 技術スキルのmindmap（mermaid）
-- キャリア進展のtimeline（mermaid）
+## 📊 データ統計・可視化
+- 関連するpieチャート（mermaid）
+- データ構造のmindmap（mermaid）
+- 時系列データのtimeline（mermaid）
 ```
 
 **完了後**: タスクをcompletedに変更
 
-#### Step 2-2: GGシート変換【2番目のタスクを in_progress に設定】
+#### Step 2-2: 第2シート詳細変換【2番目のタスクを in_progress に設定】
 
-**出力ファイル**: `docs/GG_経歴書_詳細.md`
+**出力ファイル**: `docs/result/[シート名2]_詳細.md`
 
 **必須含有要素**:
 ```markdown
-# GG（銀河 次郎）- 経歴書詳細
+# [シート名2] - 詳細分析
 
 ## 📋 基本情報
-## 💼 プロジェクト履歴
-## 🔍 TGとの比較分析  ← 重要：比較表を作成
-## 📊 キャリア統計
-## 🚀 今後の展望
+## 💼 データ構造・内容
+## 🔍 第1シートとの比較分析  ← 重要：比較表を作成
+## 📊 データ統計・可視化
+## 🚀 データ活用・展望
 ```
 
 **完了後**: タスクをcompletedに変更
 
-#### Step 2-3: 構成図シート変換【3番目のタスクを in_progress に設定】
+#### Step 2-3: 第3シート（構成図・フロー系）変換【3番目のタスクを in_progress に設定】
 
-**出力ファイル**: `docs/構成図_詳細フローチャート.md`
+**出力ファイル**: `docs/result/[シート名3]_詳細フローチャート.md`
 
-**必須含有要素**:
+**必須含有要素**（構成図・フロー系シートの場合）:
 ```markdown
-# 構成図シート - 詳細フローチャート分析
+# [シート名3] - 詳細フローチャート分析
 
 ## 🔄 基本フローチャート
 - 改善されたmermaidフローチャート
@@ -274,6 +308,8 @@ TodoWriteツールを使用して以下のタスクを設定：
 - Excel座標系での配置説明
 ```
 
+**注意**: シートの内容が構成図・フロー以外の場合は、Step 2-1・2-2と同様の詳細分析形式を使用
+
 **完了後**: タスクをcompletedに変更
 
 ---
@@ -282,31 +318,37 @@ TodoWriteツールを使用して以下のタスクを設定：
 
 #### Step 3-1: 総合レポート作成【4番目のタスクを in_progress に設定】
 
-**出力ファイル**: `docs/経歴書サンプル_総合分析レポート.md`
+**出力ファイル**: `docs/result/[Excelファイル名]_総合分析レポート.md`
 
 **必須含有要素**:
 ```markdown
-# 経歴書サンプル.xlsx - 総合分析レポート
+# [Excelファイル名].xlsx - 総合分析レポート
 
 ## 📋 エグゼクティブサマリー
-## 👥 人材プロファイル比較
-## 📊 プロジェクト履歴分析
-## 💼 技術スキル進化分析
-## 🏢 業界特化スキル分析
-## 🎨 フローチャート設計分析
-## 📈 キャリア進展パターン分析
-## 🔍 組織戦略分析
+## 👥 データプロファイル比較（複数シート間の比較）
+## 📊 データ構造・履歴分析
+## 💼 技術・業務スキル分析（該当する場合）
+## 🏢 業界・分野特化分析
+## 🎨 フローチャート・構成分析（図表シートがある場合）
+## 📈 データ進展・変化パターン分析
+## 🔍 戦略・活用分析
 ## 📊 定量分析結果
-## 🚀 今後の展開提案
+## 🚀 今後の展開・活用提案
 ## 📋 結論
 ```
 
-**重要なmermaid図**:
-- 人材プロファイル比較図
-- 業界別経験分布（pie）
-- 技術習得タイムライン（timeline）
-- ガントチャート（プロジェクト期間）
-- 技術スタック深度分析（mindmap）
+**内容調整指針**:
+- 経歴書以外のExcelファイルの場合、業務内容に応じてセクション名を調整
+- 人材データでない場合は「データプロファイル比較」「業務フロー分析」等に変更
+- 技術情報が含まれない場合は該当セクションを省略または調整
+
+**重要なmermaid図**（内容に応じて選択・調整）:
+- データプロファイル比較図
+- 分野別・カテゴリ別分布（pie）
+- 時系列変化タイムライン（timeline）
+- ガントチャート（期間・スケジュール情報がある場合）
+- データ構造・関係性分析（mindmap）
+- フローチャート・プロセス図（flowchart）
 
 **完了後**: タスクをcompletedに変更
 
@@ -405,20 +447,26 @@ TodoWriteツール実行：
 ```markdown
 TodoWriteツール実行：
 [
-  {"content": "TGシートの経歴書データを見やすいMarkdown形式で整理", "status": "pending", "activeForm": "..."},
-  {"content": "GGシートの経歴書データを見やすいMarkdown形式で整理", "status": "pending", "activeForm": "..."},
-  {"content": "構成図シートのフローチャートをmermaid形式で改善", "status": "pending", "activeForm": "..."},
+  {"content": "第1シートのデータを見やすいMarkdown形式で詳細整理", "status": "pending", "activeForm": "..."},
+  {"content": "第2シートのデータを見やすいMarkdown形式で詳細整理", "status": "pending", "activeForm": "..."},
+  {"content": "第3シート（構成図・フロー系）をmermaid形式で改善", "status": "pending", "activeForm": "..."},
   {"content": "全体のサマリーとプロジェクト分析ドキュメントを作成", "status": "pending", "activeForm": "..."}
 ]
+
+※ 実際のシート名に置き換えて設定
+※ シート数が3つ以外の場合は適宜調整
 ```
 
 ### ファイル読み込み（並行実行）
 ```markdown
-Read: docs/20250927_001.md
-Read: docs/TG_sheet.md
-Read: docs/GG_sheet.md
-Read: docs/構成図_sheet.md
+Read: docs/20250927_001.md  # 基準ファイル（存在する場合）
+Read: docs/result/excel_structure_analysis.md
+Read: docs/result/[シート名1]_sheet.md
+Read: docs/result/[シート名2]_sheet.md
+Read: docs/result/[シート名3]_sheet.md
 （上記を同一メッセージ内で並行実行）
+
+※ 実際のシート名・ファイル名に置き換えて実行
 ```
 
 ### Excel解析フェーズ実行コマンド
@@ -437,16 +485,21 @@ ls -la extracted_excel/xl/worksheets/
 
 ### ファイル作成（Phase 0）
 ```markdown
-Write: docs/excel_structure_analysis.md
-Write: docs/シート名_sheet.md （各シート分）
+Write: docs/result/excel_structure_analysis.md
+Write: docs/result/[シート名1]_sheet.md
+Write: docs/result/[シート名2]_sheet.md
+Write: docs/result/[シート名3]_sheet.md
+（各シート分、実際のシート名に置き換え）
 ```
 
 ### ファイル作成（Phase 1以降）
 ```markdown
-Write: docs/TG_経歴書_詳細.md
-Write: docs/GG_経歴書_詳細.md
-Write: docs/構成図_詳細フローチャート.md
-Write: docs/経歴書サンプル_総合分析レポート.md
+Write: docs/result/[シート名1]_詳細.md
+Write: docs/result/[シート名2]_詳細.md
+Write: docs/result/[シート名3]_詳細フローチャート.md  # 構成図系の場合
+Write: docs/result/[Excelファイル名]_総合分析レポート.md
+
+※ 実際のシート名・ファイル名に置き換えて作成
 ```
 
 ---
@@ -454,11 +507,19 @@ Write: docs/経歴書サンプル_総合分析レポート.md
 ## 📝 応用・カスタマイズ指針
 
 ### 他のExcelファイル対応時
-1. **基準ファイル**: `docs/YYYYMMDD_NNN.md`を確認
+1. **基準ファイル**: `docs/YYYYMMDD_NNN.md`を確認（存在する場合）
 2. **Excel解析**: Phase 0の手順を必ず実行
-3. **シート数**: 3シート以外の場合は適宜タスクを調整
-4. **データ種別**: 経歴書以外の場合は出力構造を調整
-5. **ファイル命名**: 元ファイル名に応じてmarkdownファイル名を調整
+3. **シート数**: 実際のシート数に応じてタスクを調整（1-10シート対応可能）
+4. **データ種別**: 経歴書・売上データ・在庫管理・プロジェクト管理等、様々なデータ種別に対応
+5. **ファイル命名**: 実際のシート名・ファイル名を使用（日本語・英数字両対応）
+6. **内容調整**: データの性質に応じてセクション構成・分析観点を柔軟に調整
+
+### データ種別別の対応例
+- **人材・経歴書**: キャリア分析、スキル比較、成長パターン
+- **売上・財務データ**: トレンド分析、業績比較、予測
+- **在庫・物流データ**: 効率分析、最適化提案、フロー改善
+- **プロジェクト管理**: 進捗分析、リソース配分、リスク評価
+- **顧客データ**: セグメント分析、行動パターン、満足度評価
 
 ### 追加分析項目
 - 技術トレンド分析
