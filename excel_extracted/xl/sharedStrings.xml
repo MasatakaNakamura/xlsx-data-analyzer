@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="438" uniqueCount="113"><si><t>作成日</t></si><si><t>氏　名</t></si><si><t>性　別</t></si><si><t>年齢</t></si><si><t>現住所</t></si><si><t>交通機関</t></si><si><t>最 寄 駅</t></si><si><t>最終学歴</t></si><si><t>免許/資格</t></si><si><t>自　年月</t></si><si><t>業務
+スキル</t></si><si><t>作業
+内容</t></si><si><t>職域</t></si><si><t>形態</t></si><si><t>月数</t></si><si><t>至　年月</t></si><si><t>機種</t></si><si><t>OS/DB 等</t></si><si><t>言語</t></si><si><t>補足事項</t></si><si><t>作業内容</t></si><si><t>A.要件定義</t></si><si><t>B.外部設計・基本設計</t></si><si><t>D.プログラム製造・単体テスト</t></si><si><t>E.総合テスト</t></si><si><t>F.サポート</t></si><si><t>職　 域</t></si><si><t>1.プロジェクトマネージャ</t></si><si><t>2.プロジェクトリーダ</t></si><si><t>3.サブリーダ</t></si><si><t>4.メンバ</t></si><si><t>5.その他</t></si><si><t>形　 態</t></si><si><t>1.オンライン系</t></si><si><t>2.バッチ系</t></si><si><t>3.C/S</t></si><si><t>4.WEB系</t></si><si><t>5.制御系</t></si><si><t>6.運用系</t></si><si><t>7.ネットワーク系</t></si><si><t>8.その他</t></si><si><t>システム名/業務内容</t></si><si><t>生年月日</t><phoneticPr fontId="23"/></si><si><t>C.内部設計・詳細設計</t><phoneticPr fontId="23"/></si><si><t>G.オペレーション</t><phoneticPr fontId="23"/></si><si><t>E</t><phoneticPr fontId="23"/></si><si><t>Windows 7</t><phoneticPr fontId="23"/></si><si><t>ミドルウェア</t><phoneticPr fontId="23"/></si><si><t>F</t><phoneticPr fontId="23"/></si><si><t>男</t><rPh sb="0" eb="1"><t>オトコ</t></rPh><phoneticPr fontId="23"/></si><si><t>大学卒業</t><rPh sb="0" eb="2"><t>ダイガク</t></rPh><rPh sb="2" eb="4"><t>ソツギョウ</t></rPh><phoneticPr fontId="23"/></si><si><t>スタッフ教育業務</t><rPh sb="4" eb="6"><t>キョウイク</t></rPh><rPh sb="6" eb="8"><t>ギョウム</t></rPh><phoneticPr fontId="23"/></si><si><t>運用PMO</t><rPh sb="0" eb="2"><t>ウンヨウ</t></rPh><phoneticPr fontId="23"/></si><si><t>システム名/業務内容</t><phoneticPr fontId="23"/></si><si><t>DOS/V</t><phoneticPr fontId="23"/></si><si><t>【作業概要】
+　飲食店の備品の在庫管理業及びスタッフ教育に携わる
+
+【作業内容】
+  在庫管理業
+　　・日常業務における商品の在庫の入庫、出庫を管理
+　　・実地棚卸業務
+　　・仕入先に商品の購買依頼業務等
+　スタッフ教育
+　　・品質及び方針指導
+　　・接客及び対応指導
+　　・各種作業のマニュアル・チェックシート化
+　　・機械操作方法の指導及びメンテナンス方法指導
+
+【環境キーワード】
+Excel, Word, PowerPoint</t><rPh sb="1" eb="3"><t>サギョウ</t></rPh><rPh sb="12" eb="14"><t>ビヒン</t></rPh><rPh sb="15" eb="17"><t>ザイコ</t></rPh><rPh sb="17" eb="19"><t>カンリ</t></rPh><rPh sb="19" eb="20"><t>ギョウ</t></rPh><rPh sb="20" eb="21"><t>オヨ</t></rPh><rPh sb="26" eb="28"><t>キョウイク</t></rPh><rPh sb="29" eb="30"><t>タズサ</t></rPh><rPh sb="43" eb="45"><t>ザイコ</t></rPh><rPh sb="45" eb="47"><t>カンリ</t></rPh><rPh sb="47" eb="48"><t>ギョウ</t></rPh><rPh sb="161" eb="163"><t>キカイ</t></rPh><rPh sb="163" eb="165"><t>ソウサ</t></rPh><rPh sb="165" eb="167"><t>ホウホウ</t></rPh><rPh sb="168" eb="170"><t>シドウ</t></rPh><rPh sb="170" eb="171"><t>オヨ</t></rPh><rPh sb="178" eb="180"><t>ホウホウ</t></rPh><rPh sb="180" eb="182"><t>シドウ</t></rPh><phoneticPr fontId="23"/></si><si><t xml:space="preserve">【作業概要】
+　運用補佐業務
+
+【作業内容】
+　　・進捗管理
+　　・会議室の確保、会議出欠確認、議事録作成、会議用資料作成、その他資料作成
+　　・備品管理、PC管理、キッティング
+　　・メール、電話、来客対応
+　　・関連部署に対するエスカレーション
+
+【作業キーワード】
+Excel、Word、PowerPoint
+</t><rPh sb="8" eb="10"><t>ウンヨウ</t></rPh><rPh sb="10" eb="12"><t>ホサ</t></rPh><rPh sb="12" eb="14"><t>ギョウム</t></rPh><rPh sb="28" eb="30"><t>カンリ</t></rPh><rPh sb="100" eb="102"><t>ライキャク</t></rPh><rPh sb="127" eb="129"><t>サギョウ</t></rPh><phoneticPr fontId="23"/></si><si><t>某商社殿向け</t><rPh sb="0" eb="1"><t>ボウ</t></rPh><rPh sb="1" eb="3"><t>ショウシャ</t></rPh><rPh sb="4" eb="5"><t>ム</t></rPh><phoneticPr fontId="23"/></si><si><t>飲食会社殿向け</t><rPh sb="0" eb="2"><t>インショク</t></rPh><rPh sb="2" eb="4"><t>カイシャ</t></rPh><rPh sb="5" eb="6"><t>ム</t></rPh><phoneticPr fontId="23"/></si><si><t>Windows7</t><phoneticPr fontId="23"/></si><si><t>官庁向け</t><rPh sb="0" eb="3"><t>カンチョウム</t></rPh><phoneticPr fontId="23"/></si><si><t>システム更改対応</t><rPh sb="4" eb="6"><t>コウカイ</t></rPh><rPh sb="6" eb="8"><t>タイオウ</t></rPh><phoneticPr fontId="23"/></si><si><t>VB.net、C#、Java、VBA</t><phoneticPr fontId="23"/></si><si><t>B～F</t><phoneticPr fontId="23"/></si><si><t>2,3,4</t><phoneticPr fontId="23"/></si><si><t>Windows10
+Oracle12C</t><phoneticPr fontId="23"/></si><si><r><t xml:space="preserve">【システム概要】
+　陸運局向けの希望番号システム更改
+
+【作業内容】　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　  　　　　　　
+</t></r><r><rPr><sz val="9"/><color indexed="8"/><rFont val="ＭＳ 明朝"/><family val="1"/><charset val="128"/></rPr><t xml:space="preserve">　・エンハンス対応(基本設計・詳細設計・製造・テスト）
+　・不具合報告書の作成及び原因調査
+　・機能追加による設計書作成、修正、各言語でのコーディング
+　・単体試験項目書の作成及び、実施
+　・結合試験項目書の作成及び、実施
+　・VBAでのツール開発
+
+
+【環境キーワード】
+　Eclipse4.7, Tomcat1.8.5, VisualStudio2017, JDK1.8.0, C#, VB.Net, VBA, TFS, Oracle12C
+</t></r><rPh sb="10" eb="13"><t>リクウンキョク</t></rPh><rPh sb="13" eb="14"><t>ム</t></rPh><rPh sb="24" eb="26"><t>コウカイ</t></rPh><rPh sb="184" eb="188"><t>キホンセッケイ</t></rPh><rPh sb="189" eb="191"><t>ショウサイ</t></rPh><rPh sb="191" eb="193"><t>セッケイ</t></rPh><rPh sb="194" eb="196"><t>セイゾウ</t></rPh><rPh sb="232" eb="234"><t>サクセイ</t></rPh><rPh sb="238" eb="239"><t>カク</t></rPh><rPh sb="239" eb="241"><t>ゲンゴ</t></rPh><phoneticPr fontId="23"/></si><si><t>印刷業殿向け</t><rPh sb="0" eb="3"><t>インサツギョウ</t></rPh><rPh sb="3" eb="4"><t>ドノ</t></rPh><rPh sb="4" eb="5"><t>ム</t></rPh><phoneticPr fontId="23"/></si><si><t>システム開発</t><rPh sb="4" eb="6"><t>カイハツ</t></rPh><phoneticPr fontId="23"/></si><si><t>C,D,E</t><phoneticPr fontId="23"/></si><si><t>Windows10
+SQLServer
+Oracle</t><phoneticPr fontId="23"/></si><si><t>C#</t><phoneticPr fontId="23"/></si><si><t>【概要】
+印刷業殿向け社内システム開発（C/S)基盤（社内向け）チームに参画。
+製造から結合試験、検証、保守まで担当。その他マニュアル作成。
+
+【ミドルウェア/ツール】
+　C#、SQL、windows10、VisualStudio2015、Access、ManagementStudio2013、ActiveReport9.0J、VBA、OracleSQL、MySQL</t><rPh sb="24" eb="26"><t>キバン</t></rPh><rPh sb="27" eb="29"><t>シャナイ</t></rPh><rPh sb="29" eb="30"><t>ム</t></rPh><rPh sb="36" eb="38"><t>サンカク</t></rPh><rPh sb="49" eb="51"><t>ケンショウ</t></rPh><rPh sb="52" eb="54"><t>ホシュ</t></rPh><phoneticPr fontId="23"/></si><si><t>某商社様向け</t><phoneticPr fontId="23"/></si><si><t>貿易事務用業務システム</t><rPh sb="0" eb="2"><t>ボウエキ</t></rPh><rPh sb="2" eb="5"><t>ジムヨウ</t></rPh><rPh sb="5" eb="7"><t>ギョウム</t></rPh><phoneticPr fontId="23"/></si><si><t>D,E</t><phoneticPr fontId="23"/></si><si><t>Windows7
+SQLServer</t><phoneticPr fontId="23"/></si><si><t>【システム概要】
+　商社向け貿易事務用業務システム
+
+【作業内容】
+・自社チームの短期増員として上記システム開発のプロジェクトに参画。
+　作業は主にテストを担当。
+
+【環境キーワード】
+　WindowsServer、VisualStudio、C#、SQLServer、IIS、VisualStudio TeamFoundationServer、Git</t><rPh sb="35" eb="37"><t>ジシャ</t></rPh><rPh sb="41" eb="43"><t>タンキ</t></rPh><rPh sb="43" eb="45"><t>ゾウイン</t></rPh><rPh sb="54" eb="56"><t>カイハツ</t></rPh><rPh sb="64" eb="66"><t>サンカク</t></rPh><rPh sb="72" eb="73"><t>オモ</t></rPh><rPh sb="78" eb="80"><t>タントウ</t></rPh><phoneticPr fontId="23"/></si><si><t>生保</t><rPh sb="0" eb="2"><t>セイホ</t></rPh><phoneticPr fontId="23"/></si><si><t>B－E</t><phoneticPr fontId="23"/></si><si><t>2,4</t><phoneticPr fontId="23"/></si><si><t>社内システム開発</t><rPh sb="0" eb="2"><t>シャナイ</t></rPh><rPh sb="6" eb="8"><t>カイハツ</t></rPh><phoneticPr fontId="23"/></si><si><t>生保会社殿向け</t><phoneticPr fontId="23"/></si><si><t>Windows7
+Oracle</t><phoneticPr fontId="23"/></si><si><t>Java
+SQL</t><phoneticPr fontId="23"/></si><si><r><t>【システム概要】
+生保会社向け社内システム開発（商品・ネット契約者窓口 機能担当）
+
+【作業概要】</t></r><r><rPr><sz val="9"/><color indexed="8"/><rFont val="ＭＳ 明朝"/><family val="1"/><charset val="128"/></rPr><t xml:space="preserve">
+帳票設計書・内部設計書・詳細設計書の作成およびレビュー対応
+Java実装、単体試験、帳票作成、画面修正、結合試験、Java実装レビュー対応、単体試験レビュー対応
+その他
+他チームへの開発支援、作業手順書作成、VBAツール作成
+
+【作業キーワード】
+Java ,JustWare(日立製フレームワーク）,Cosminexus(日立製ミドルウェア),Biz/Designer,BRMS,Oracle12c</t></r><rPh sb="30" eb="33"><t>ケイヤクシャ</t></rPh><rPh sb="33" eb="35"><t>マドグチ</t></rPh><phoneticPr fontId="23"/></si><si><t>某金融機関殿向け</t><phoneticPr fontId="23"/></si><si><t>SWIFT接続、銀行間送金システム</t><rPh sb="5" eb="7"><t>セツゾク</t></rPh><rPh sb="8" eb="11"><t>ギンコウカン</t></rPh><rPh sb="11" eb="13"><t>ソウキン</t></rPh><phoneticPr fontId="23"/></si><si><t>銀行</t><rPh sb="0" eb="2"><t>ギンコウ</t></rPh><phoneticPr fontId="23"/></si><si><t>Windows10
+Oracle11,19
+AIX
+Linux</t><phoneticPr fontId="23"/></si><si><t>Bash, Ksh, SQL</t><phoneticPr fontId="23"/></si><si><t>【作業概要】
+　・SWIFTでの銀行間送金システムのテストフェーズからチームリーダー（配下4名）として参画
+　・海外用送金システム改修に伴う設計、テスト、リリースサポート
+  ・国内発信チームを主担当とし、海外発信チームのサポート業務も担当
+
+【作業内容】
+　・銀行間送金システムの総合テストの消化
+　・海外用送金システムの外部設計及び内部設計
+　・既存の設計書を元に設計書の新規作成と一部修正
+　・送金システムパッケージの受入テスト
+  ・チームリーダーとしてメンバの管理（レビュー、進捗管理、チーム内/チーム間調整、質疑対応/サポート）
+
+【環境キーワード】
+　SWIFT、Redmine、WinSCP、Tera Term、Linux、AIX、ksh、bash、MQ</t><rPh sb="43" eb="45"><t>ハイカ</t></rPh><rPh sb="46" eb="47"><t>メイ</t></rPh><rPh sb="51" eb="53"><t>サンカク</t></rPh><rPh sb="115" eb="117"><t>ギョウム</t></rPh><rPh sb="118" eb="120"><t>タントウ</t></rPh><rPh sb="235" eb="237"><t>カンリ</t></rPh><rPh sb="243" eb="245"><t>シンチョク</t></rPh><rPh sb="245" eb="247"><t>カンリ</t></rPh><rPh sb="251" eb="252"><t>ナイ</t></rPh><rPh sb="256" eb="257"><t>カン</t></rPh><rPh sb="257" eb="259"><t>チョウセイ</t></rPh><rPh sb="260" eb="262"><t>シツギ</t></rPh><rPh sb="262" eb="264"><t>タイオウ</t></rPh><phoneticPr fontId="23"/></si><si><t>行政向け業務システムの</t><rPh sb="0" eb="3"><t>ギョウセイム</t></rPh><rPh sb="4" eb="6"><t>ギョウム</t></rPh><phoneticPr fontId="23"/></si><si><t>リプレイス開発</t><rPh sb="5" eb="7"><t>カイハツ</t></rPh><phoneticPr fontId="23"/></si><si><t>C,D</t><phoneticPr fontId="23"/></si><si><t xml:space="preserve">Windows
+</t><phoneticPr fontId="23"/></si><si><t>形態</t><phoneticPr fontId="23"/></si><si><t>Java
+Spring
+JUnit</t><phoneticPr fontId="23"/></si><si><r><t>【システム概要】
+行政向け業務システムのリプレイス開発
+
+【作業概要】</t></r><r><rPr><sz val="9"/><color indexed="8"/><rFont val="ＭＳ 明朝"/><family val="1"/><charset val="128"/></rPr><t xml:space="preserve">
+既存システムの刷新対応開発プロジェクトにヘルプ参画
+製造、不具合対応等
+
+【作業キーワード】
+Java ,Spring,Junit,JSP</t></r><rPh sb="9" eb="12"><t>ギョウセイム</t></rPh><rPh sb="13" eb="15"><t>ギョウム</t></rPh><rPh sb="25" eb="27"><t>カイハツ</t></rPh><rPh sb="36" eb="38"><t>キゾン</t></rPh><rPh sb="43" eb="45"><t>サッシン</t></rPh><rPh sb="45" eb="47"><t>タイオウ</t></rPh><rPh sb="47" eb="49"><t>カイハツ</t></rPh><rPh sb="59" eb="61"><t>サンカク</t></rPh><rPh sb="62" eb="64"><t>セイゾウ</t></rPh><rPh sb="65" eb="68"><t>フグアイ</t></rPh><rPh sb="68" eb="70"><t>タイオウ</t></rPh><rPh sb="70" eb="71"><t>トウ</t></rPh><phoneticPr fontId="23"/></si><si><t>長距離電話顧客料金システム</t><phoneticPr fontId="23"/></si><si><t>通信インフラ業向け</t><rPh sb="0" eb="2"><t>ツウシン</t></rPh><rPh sb="6" eb="7"><t>ギョウ</t></rPh><rPh sb="7" eb="8"><t>ム</t></rPh><phoneticPr fontId="23"/></si><si><t>Java</t><phoneticPr fontId="23"/></si><si><t>Windows</t><phoneticPr fontId="23"/></si><si><t>A－D</t><phoneticPr fontId="23"/></si><si><t>【作業概要】
+　・長距離電話顧客料金システムのマイグレーション対応
+　・固定電話/法人の契約管理、クレジットカード契約チェックといった機能（バックエンド）を担当
+  ・スクラム開発（ウォーターフォール寄り）
+
+【作業内容】
+　・基本設計、コード、総合試験
+  ・結合テスト対応
+
+【環境キーワード】
+　Java,SpringBoot,Thymeleaf, Bootstrap ,jQuery,JSON,Slack, JIRA, Confuluence,Git,Github
+　Copilot,ChatGPT(ローカルRAG)、通信業独自クラウド（サーバーレス開発）</t></si><si><t>銀河　太郎</t><rPh sb="0" eb="2"><t>ギンガ</t></rPh><rPh sb="3" eb="5"><t>タロウ</t></rPh><phoneticPr fontId="23"/></si><si><t>北海道</t><rPh sb="0" eb="3"><t>ホッカイドウ</t></rPh><phoneticPr fontId="23"/></si><si><t>北海道新幹線</t><rPh sb="0" eb="6"><t>ホッカイドウシンカンセン</t></rPh><phoneticPr fontId="23"/></si><si><t>函館北斗</t><rPh sb="0" eb="4"><t>ハコダテホクト</t></rPh><phoneticPr fontId="23"/></si><si><t>銀河　次郎</t><rPh sb="0" eb="2"><t>ギンガ</t></rPh><rPh sb="3" eb="5"><t>ジロウ</t></rPh><phoneticPr fontId="23"/></si><si><t>青森</t><rPh sb="0" eb="2"><t>アオモリ</t></rPh><phoneticPr fontId="23"/></si><si><t>JR奥羽本線</t><rPh sb="2" eb="6"><t>オウウホンセン</t></rPh><phoneticPr fontId="23"/></si><si><t>弘前</t><rPh sb="0" eb="2"><t>ヒロサキ</t></rPh><phoneticPr fontId="23"/></si></sst>
